@@ -31,7 +31,7 @@ if(numeroConvertido > 0){
 }else{
     Console.WriteLine("Error, ingrese un numero mayor a 0.");
 }
-
+//Punto 2
 string opcion, num1, num2;
 int opcionConvert;
 float num1Convert, num2Convert;
@@ -103,7 +103,7 @@ do
 } while (opcionConvert != 1 && opcionConvert != 2 && opcionConvert != 3 && opcionConvert != 4 && opcionConvert != 5);
 
 
-
+//Punto 3
 string numeroIngresado;
 float numeroConvert;
 
@@ -151,4 +151,35 @@ if(result1 && result2){
 }else{
     Console.WriteLine("Ocurrio un error, vuelva a intentarlo");
 }
+
+//Punto 4
+string cadena1, cadena2;
+
+Console.Write("\n");
+Console.Write("Ingrese una cadena: ");
+cadena1 = Console.ReadLine();
+Console.Write("Ingrese otra cadena: ");
+cadena2 = Console.ReadLine();
+
+Console.WriteLine("La longitud de la cadena 1 es: " + cadena1.Length);
+Console.WriteLine("La longitud de la cadena 2 es: " + cadena2.Length);
+Console.WriteLine("Las dos cadenas concatenadas queda de la siguiente manera: " + cadena1 + cadena2);
+Console.WriteLine("Un substring de la cadena 1 es: " + cadena1.Substring(0, cadena1.Length/2));
+//Console.WriteLine("Un substring de la cadena 2 es: " + cadena2.Substring(1, cadena2.Length));
+
+//Me falta hacer lo de la calculadora
+
+foreach (char letra in cadena1)
+{
+    Console.Write($" {letra} ");
+}
+
+//Me falta buscar por ocurrencia
+
+Console.WriteLine("La cadena 1 convertida a mayuscula es: " + cadena1.ToUpper());
+Console.WriteLine("La cadena 1 convertida a minuscula es: " + cadena1.ToLower());
+
+//Me falta hacer el punto de split()
+
+//Me falta el punto de trabajar con la calc2
 
