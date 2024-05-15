@@ -58,8 +58,8 @@ do
             float.TryParse(num1, out num1Convert);
             float.TryParse(num2, out num2Convert);
 
-            float resultado = num1Convert + num2Convert;
-            Console.WriteLine("La suma entre "+ num1Convert + " y " + num2Convert + " es: " + resultado);
+            float resultado0 = num1Convert + num2Convert;
+            Console.WriteLine("La suma entre "+ num1Convert + " y " + num2Convert + " es: " + resultado0);
             break;
         case 2:
             Console.Write("Ingrese el numero 1: ");
