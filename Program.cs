@@ -30,9 +30,6 @@ if(numeroConvertido > 0){
 
 }else{
     Console.WriteLine("Error, ingrese un numero mayor a 0.");
-<<<<<<< HEAD
-}
-=======
 }
 
 string opcion, num1, num2;
@@ -155,4 +152,3 @@ if(result1 && result2){
     Console.WriteLine("Ocurrio un error, vuelva a intentarlo");
 }
 
->>>>>>> CalculadoraV1
