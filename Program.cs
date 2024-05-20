@@ -2,14 +2,14 @@
 Console.WriteLine("Hello, World!");
 
 int a;
- int b;
- a=10;
- b=a;
- Console.WriteLine("valor de a:"+a);
- Console.WriteLine("valor de b:"+b);
+int b;
+a = 10;
+b = a;
+Console.WriteLine("valor de a:" + a);
+Console.WriteLine("valor de b:" + b);
 
- ///Punto 1///
-Console.Write("Ingrese un numero: ");
+///Punto 1///
+/*Console.Write("Ingrese un numero: ");
 string numero = Console.ReadLine();
 int numeroConvertido;
 bool convertido = int.TryParse(numero, out numeroConvertido);
@@ -30,9 +30,11 @@ if(numeroConvertido > 0){
 
 }else{
     Console.WriteLine("Error, ingrese un numero mayor a 0.");
-}
+}*/
+
+
 //Punto 2
-string opcion, num1, num2;
+/*string opcion, num1, num2;
 int opcionConvert;
 float num1Convert, num2Convert;
 do
@@ -101,10 +103,10 @@ do
     }
 
 } while (opcionConvert != 1 && opcionConvert != 2 && opcionConvert != 3 && opcionConvert != 4 && opcionConvert != 5);
-
+*/
 
 //Punto 3
-string numeroIngresado;
+/*string numeroIngresado;
 float numeroConvert;
 
 Console.Write("\n");
@@ -150,7 +152,7 @@ if(result1 && result2){
     
 }else{
     Console.WriteLine("Ocurrio un error, vuelva a intentarlo");
-}
+}*/
 
 //Punto 4
 string cadena1, cadena2;
@@ -158,28 +160,154 @@ string cadena1, cadena2;
 Console.Write("\n");
 Console.Write("Ingrese una cadena: ");
 cadena1 = Console.ReadLine();
-Console.Write("Ingrese otra cadena: ");
-cadena2 = Console.ReadLine();
+/*Console.Write("Ingrese otra cadena: ");
+cadena2 = Console.ReadLine();*/
 
-Console.WriteLine("La longitud de la cadena 1 es: " + cadena1.Length);
-Console.WriteLine("La longitud de la cadena 2 es: " + cadena2.Length);
-Console.WriteLine("Las dos cadenas concatenadas queda de la siguiente manera: " + cadena1 + cadena2);
-Console.WriteLine("Un substring de la cadena 1 es: " + cadena1.Substring(0, cadena1.Length/2));
+//Obtener la longitud de la cadena y muestre por pantalla
+//Console.WriteLine("La longitud de la cadena 1 es: " + cadena1.Length);
+
+//A partir de una segunda cadena ingresada por el usuario, concatene ambas cadenas distintas
+//Console.WriteLine("Las dos cadenas concatenadas queda de la siguiente manera: " + cadena1 + cadena2);
+
+//Extraer una subcadena de la cadena ingresada
+//Console.WriteLine("Un substring de la cadena 1 es: " + cadena1.Substring(0, cadena1.Length/2));
 //Console.WriteLine("Un substring de la cadena 2 es: " + cadena2.Substring(1, cadena2.Length));
 
-//Me falta hacer lo de la calculadora
+//Utilizando la calculadora creada anteriormente realizar las operaciones de dos números y mostrar por pantalla y mostrar en texto el resultado
+/*string opcion, num1, num2;
+int opcionConvert;
+float num1Convert, num2Convert;
+do
+{
+    Console.WriteLine("\n");
+    Console.WriteLine("Menu Principal:");
+    Console.WriteLine("1) Sumar");
+    Console.WriteLine("2) Restar");
+    Console.WriteLine("3) Multiplicar");
+    Console.WriteLine("4) Dividir");
+    Console.WriteLine("5) Salir");
+    Console.Write("Ingrese la opcion deseada:");
+    opcion = Console.ReadLine();
+    int.TryParse(opcion, out opcionConvert);
 
-foreach (char letra in cadena1)
+    switch (opcionConvert)
+    {
+        case 1:
+            Console.Write("Ingrese el numero 1: ");
+            num1 = Console.ReadLine();
+            Console.Write("Ingrese el numero 2: ");
+            num2 = Console.ReadLine();
+            float.TryParse(num1, out num1Convert);
+            float.TryParse(num2, out num2Convert);
+
+            string resultado0 = (num1Convert + num2Convert).ToString();
+            Console.WriteLine("La suma entre "+ num1Convert + " y " + num2Convert + " es: " + resultado0);
+            break;
+        case 2:
+            Console.Write("Ingrese el numero 1: ");
+            num1 = Console.ReadLine();
+            Console.Write("Ingrese el numero 2: ");
+            num2 = Console.ReadLine();
+            float.TryParse(num1, out num1Convert);
+            float.TryParse(num2, out num2Convert);
+
+            string resultado2 = (num1Convert - num2Convert).ToString();
+            Console.WriteLine("La resta entre " + num1Convert.ToString() + " y " + num2Convert.ToString() + " es: " + resultado2);
+            break;
+        case 3:
+            Console.Write("Ingrese el numero 1: ");
+            num1 = Console.ReadLine();
+            Console.Write("Ingrese el numero 2: ");
+            num2 = Console.ReadLine();
+            float.TryParse(num1, out num1Convert);
+            float.TryParse(num2, out num2Convert);
+
+            string resultado3 = (num1Convert * num2Convert).ToString();
+            Console.WriteLine("La multiplicacion entre " + num1Convert.ToString() + " y " + num2Convert.ToString() + " es: " + resultado3);
+            break;
+        case 4:
+            Console.Write("Ingrese el numero 1: ");
+            num1 = Console.ReadLine();
+            Console.Write("Ingrese el numero 2: ");
+            num2 = Console.ReadLine();
+            float.TryParse(num1, out num1Convert);
+            float.TryParse(num2, out num2Convert);
+
+            string resultado4 = (num1Convert / num2Convert).ToString();
+            Console.WriteLine("La division de " + num1Convert.ToString() + " entre " + num2Convert.ToString() + " es: " + resultado4);
+            break;
+        case 5:
+            break;
+        default:
+            break;
+    }
+
+} while (opcionConvert != 1 && opcionConvert != 2 && opcionConvert != 3 && opcionConvert != 4 && opcionConvert != 5);
+*/
+
+
+//Recorrer la cadena de texto con un ciclo Foreach e ir mostrando elemento por elemento en pantalla
+/*foreach (char letra in cadena1)
 {
     Console.Write($" {letra} ");
+}*/
+
+
+//Buscar la ocurrencia de una palabra determinada en la cadena ingresada
+/*Console.WriteLine("Ingrese la palabra que quiere buscar en la cadena");
+string palabraBuscada = Console.ReadLine();
+bool ocurrencia = cadena1.Contains(palabraBuscada);
+if(ocurrencia){
+    Console.WriteLine("La cadena SI contiene la palabra '" + palabraBuscada + "'");
+}else{
+    Console.WriteLine("La cadena NO contiene la palabra ingresada");
+}*/
+
+//Convierta la cadena a mayúsculas y luego a minúsculas.
+//Console.WriteLine("La cadena 1 convertida a mayuscula es: " + cadena1.ToUpper());
+//Console.WriteLine("La cadena 1 convertida a minuscula es: " + cadena1.ToLower());
+
+//Ingrese una cadena separada por caracteres que usted determine y muestre por pantalla los resultados (Revisar el comportamiento de split())
+/*string[] cadenaResultante = cadena1.Split(" ");
+foreach (var letra in cadenaResultante)
+{
+    Console.WriteLine(letra);
+}*/
+
+// Siguiendo con el ejemplo de la calculadora (ejercicio 2) ingrese una ecuación simple como cadena de caracteres y que el sistema lo resuelva
+static float evaluarEcuacion(string expression)
+{
+    float primero, segundo;
+    char[] operadores = { '+', '-', '*', '/' };
+
+    foreach (char operador in operadores)
+    {
+        string[] miembros = expression.Split(operador);
+        if (miembros.Length == 2)
+        {
+            if (float.TryParse(miembros[0], out primero) && float.TryParse(miembros[1], out segundo))
+            {
+                switch (operador)
+                {
+                    case '+':
+                        return primero + segundo;
+                    case '-':
+                        return primero - segundo;
+                    case '*':
+                        return primero * segundo;
+                    case '/':
+                        return primero / segundo;
+                    default:
+                        return -9999;
+                }
+            }
+            else
+            {
+                return -9999;
+            }
+        }
+    }
+    return -9999;
 }
 
-//Me falta buscar por ocurrencia
-
-Console.WriteLine("La cadena 1 convertida a mayuscula es: " + cadena1.ToUpper());
-Console.WriteLine("La cadena 1 convertida a minuscula es: " + cadena1.ToLower());
-
-//Me falta hacer el punto de split()
-
-//Me falta el punto de trabajar con la calc2
-
+Console.WriteLine("El resultado de la ecuacion es: " + evaluarEcuacion(cadena1));
